@@ -1,0 +1,189 @@
+@media screen and (max-width:640px) {
+	/*screen with 600px or smaller*/
+
+.hide-for-mobile{
+	display: none;
+}
+
+.open{
+	z-index: 1;
+}
+
+.fad-in{
+	z-index: 1;
+	
+}
+.header .overlay{
+	top: 8.5%;
+}
+.features{
+	text-align: center;
+}
+
+
+
+}
+
+
+@media screen and (min-width:641px) and (max-width:1007px ){
+
+.hide-for-mobile{
+	display: none;
+}
+.header .overlay{
+	top: 6%;
+}
+
+.open{
+	z-index: 1;
+}
+
+.fad-in{
+	z-index: 1;
+}
+.hero .heroImg{
+	flex: 3;
+	order: 2;
+	height: 28rem;
+	background-position: left center;
+
+}
+
+.hero .heroImg::before {
+	background-size: 80%;
+}
+
+.feature-grid{
+	display: flex;	
+	flex-wrap: wrap;
+}
+
+.feature-grid .feature-item{
+	
+	flex: 0 0 45%;
+
+}
+
+.articles .article-content .article-grid{
+	grid-template-columns: repeat(2, 1fr);
+	
+}
+
+
+}
+
+
+@media screen and (min-width: 1008px) {
+
+.hide-for-destop{
+	display: none;
+
+}
+
+body{
+	font-size:var(--font-med);
+}
+
+.container{
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+
+.hero .heroText h1{
+	font-size: 3.25rem;
+
+}
+.hero{
+	display: flex;
+	align-items: center;
+}
+.hero .heroText{
+	flex: 2;
+	order: 1;
+	text-align:left ;
+}
+
+.hero .heroImg{
+	flex: 3;
+	order: 2;
+	height: 41rem;
+	background-image: url('../img/bg-intro-desktop.svg');
+	background-size: cover; 
+	background-position: left center;
+
+}
+
+h2{
+	font-size: 2.25rem;
+	margin-bottom:2.25rem ;
+
+}
+.feature-grid{
+	display: flex;	
+}
+.features.feature-grid .feature-item{
+	flex: 1;
+}
+
+.features.feature-grid .feature-icon{
+	margin-bottom: 2.75rem;
+}
+
+.features .feature-grid .feature-title{
+	font-size: 1.5rem; 
+	margin-bottom: 1.5rem;
+}
+
+.features .feature-grid .feature-description{
+
+}
+
+.articles .article-content .article-grid{
+	grid-template-columns: repeat(4, 1fr);
+	
+}
+
+.footer{
+	display: grid;
+	grid-template-columns:repeat(3, 1fr) 2fr ;
+	grid-template-rows: repeat(2, 1fr) ;
+	grid-template-areas: 
+		"logo col1 col2 invite"
+		"social col1 col2 cta";
+		font-size: 0.875rem;
+	text-align: left;
+	align-items: center;
+    justify-items: center;
+    padding: 0rem 3.25rem ;
+}
+
+
+.footer .footer-logo{
+	grid-area: logo;
+}
+
+.footer .col-1 {
+	grid-area: col1;
+}
+
+.footer .col-2 {
+	grid-area: col2;
+}
+
+.footer .footer-social{
+	grid-area: social;
+}
+
+.footer .footer-invite{
+	grid-area: invite;
+	justify-self: end;
+}
+
+.footer .footer-cta{
+	grid-area: cta;
+	justify-self: end;
+	align-self: start;
+}
+
+
+}

@@ -1,0 +1,33 @@
+@keyframes fad-in{
+
+	from{
+		visibility: hidden;
+		opacity: 0;
+	}
+	
+	to{
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.fad-in{
+	animation: fad-in 400ms ease-in-out forwards;
+}
+
+@keyframes fad-out{
+
+	from{
+		visibility: visible;
+		opacity: 1;
+	}
+	to{
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+.fad-out{
+	animation: fad-out 400ms ease-in-out forwards;
+
+}

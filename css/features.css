@@ -1,0 +1,32 @@
+.features{
+	background-color: var(--lightGrayishBlue);
+}
+
+.features .feature-intro{
+	margin-bottom: 3.75rem;
+}
+
+.features .feature-grid{
+
+}
+.features .feature-grid .feature-item{
+	/*border: 1px solid pink;*/
+	padding: 0.8rem;
+}
+
+.features .feature-grid .feature-icon{
+	margin-bottom: 1.875rem;
+}
+
+.features .feature-grid .feature-title{
+	font-size: 1.25rem; 
+	font-weight: 300;
+	line-height: 1.15;
+	color: black;
+	margin-bottom: 1rem;
+}
+
+.features .feature-grid .feature-description{
+	font-size: 0.9rem;
+	line-height: 1.5;
+}

@@ -1,0 +1,119 @@
+
+.header nav{
+	position: relative;
+	background-color: white;
+	padding-top: 1.0625rem;
+	padding-bottom: 1.0625rem;
+}
+
+.header .logo{
+
+}
+
+.header .logo img{
+	width: 8.8125rem;
+	height: 1.375rem;
+}
+
+.header .toggel{
+
+}
+
+.header .toggel span{
+	display: block;
+	width: 26px;
+	height: 3.5px;
+	background-color: var(--darkBlue);
+	transform-origin: 3px 2px ;
+	transition: all 450ms ease-in-out;
+	
+
+}
+
+.header span:not(:last-child){
+	margin-bottom: 3px;
+}
+
+.open span:first-child {
+	transform: rotate(45deg);
+}
+
+.open span:nth-child(2){
+	opacity: 0;
+}
+
+.open span:last-child{
+	transform: rotate(-45deg);
+}
+
+
+.header .links{
+	/*border: 1px solid red;*/
+
+}
+
+.header .links a{
+	font-size: 0.875rem;
+	color: darkgray;
+	position: relative;
+	
+}
+
+.header .links a:not(:last-child){
+	margin-right: 32px;
+}
+
+.header .links a::before {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 5px;
+	left: 0;
+	right: 0;
+	bottom: -30px; 
+	background:
+		linear-gradient(to right, var(--limeGreen), var(--brightCyan));
+	opacity: 0;
+	transition:350ms ease-in-out;
+
+}
+
+.header .links a:hover::before{
+		opacity: 1;
+}
+
+.header .links a:hover{
+	transition: 350ms ease-in-out;
+	color: var(--darkBlue);
+}
+
+.header .overlay{
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: linear-gradient(darkgray, transparent );
+	
+}
+
+.menu{
+	visibility: hidden;
+	position: absolute;
+	border: 0.5px;
+	border-radius: 5px;
+	margin-top: 1.5rem;
+	padding:1.625rem 0rem ;
+	background: white;
+	width: calc(100% - 3rem);
+	left: 50%;
+	transform: translateX(-50%);
+	
+}
+.menu a{
+	display: block;
+	color: darkgray;
+	padding:0.625rem;
+	text-align: center;
+}

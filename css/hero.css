@@ -1,0 +1,34 @@
+.hero{
+
+}
+
+.hero .heroImg{
+	position: relative;
+	background-image: url('../img/bg-intro-mobile.svg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 17.5rem;
+
+
+}
+
+.hero .heroImg::before{
+
+	content: "";
+	position: absolute;
+	background-image: url('../img/image-mockups.png');
+	background-size: 95%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	background-position: center bottom;
+
+}
+
+
+.hero .heroText{
+	text-align: center;
+}
+
+
